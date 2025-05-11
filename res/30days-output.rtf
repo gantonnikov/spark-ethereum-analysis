@@ -1,0 +1,76 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset204 PTMono-Regular;}
+{\colortbl;\red255\green255\blue255;\red52\green255\blue16;}
+{\*\expandedcolortbl;;\cssrgb\c18858\c100000\c6666;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 (base) grigorijantonnikov@Air-Grigorij cpypto_test % python3 spark-for-bigquery.py\
+\
+Initializing Spark session...\
+25/05/11 22:40:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\
+Setting default log level to "WARN".\
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\
+Spark session initialized successfully.\
+Go to -> http://localhost:4041/jobs/\
+Starting data load from BigQuery...\
+Data loaded in 2.0s \'97 Rows: 37,196,109                                          \
+Processing and cleaning data...\
+Performing analysis: Top 10 senders by transaction count...\
+Performing analysis: Top 10 senders by total value...\
+Performing analysis: Top 10 senders by average gas price...\
+Counting expensive transactions...\
+                                                                                \
+Analysis Results:\
+Top 10 senders by transaction count:\
++------------------------------------------+--------+                           \
+|from_address                              |tx_count|\
++------------------------------------------+--------+\
+|0x974caa59e49682cda0ad2bbe82983419a2ecc400|305822  |\
+|0x1a1c87d9a6f55d3bbb064bff1059ad37b6bdc097|299459  |\
+|0x46340b20830761efd32832a74d7169b29feb9758|277968  |\
+|0xf70da97812cb96acdf810712aa562db8dfa3dbef|265545  |\
+|0x290ca4da2c963dea5ae736469a5b8a53d64d4e6a|256931  |\
+|0x264bd8291fae1d75db2c5f573b07faa6715997b5|252220  |\
+|0x28c6c06298d514db089934071355e5743bf21d60|238204  |\
+|0xb5d85cbf7cb3ee0d56b3bb207d5fc4b82f43f511|232937  |\
+|0x21a31ee1afc51d94c2efccaa2092ad1028285549|227315  |\
+|0xdfd5293d8e347dfe59e90efd55b2956a1343963d|222235  |\
++------------------------------------------+--------+\
+\
+Top 10 senders by total value:\
++------------------------------------------+-----------------------------------+\
+|from_address                              |total_value                        |\
++------------------------------------------+-----------------------------------+\
+|0x28c6c06298d514db089934071355e5743bf21d60|4188702471116480000000000.000000000|\
+|0xeae7380dd4cef6fbd1144f49e4d1e6964258a4f4|1495318192616343682098119.000000000|\
+|0xb5d85cbf7cb3ee0d56b3bb207d5fc4b82f43f511|1379820060369558896307426.000000000|\
+|0x0003b5aa5e30e97fcc596bb5d0f3a75255e08d4e|1296050378503920000000000.000000000|\
+|0xcd531ae9efcce479654c4926dec5f6209531ca7b|1083997329675246783932187.000000000|\
+|0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea|905688978839102994875265.000000000 |\
+|0xd19d3341227967610b94e7aebe8c971d2d48f419|772600847651660000000000.000000000 |\
+|0xdfd5293d8e347dfe59e90efd55b2956a1343963d|698734807079750000000000.000000000 |\
+|0x21a31ee1afc51d94c2efccaa2092ad1028285549|690122463956860000000000.000000000 |\
+|0xfe908731af54c56dfd63948f18ce5878a3b8a1ad|684929323498780000000000.000000000 |\
++------------------------------------------+-----------------------------------+\
+\
+Top 10 senders by average gas price:\
++------------------------------------------+--------------------+               \
+|from_address                              |avg_gas_price       |\
++------------------------------------------+--------------------+\
+|0x4b3676dce909141475aa1eb3bd8a3e9c445e6300|1.05306697727993E14 |\
+|0x4e53ce08aa036b2a3f5ca81c860e2ba4847e5495|6.6409603285079E13  |\
+|0xda6b5f1fd0b81ed81ddb9ad84f07912b3ee21de3|5.733558396996278E13|\
+|0x068292f41c242c493ca46e664309cfc638778c56|4.8483921459848E13  |\
+|0x335858f4c351de51acd8bede5c8889d2390083f7|3.895289995238E13   |\
+|0xa107ac50d67c649e1d102f5ee1f5eaa1e7d3e7ad|3.6257142809523E13  |\
+|0xaefc030a83ad086175be23fb6f1b5da01eed2937|2.8058293764906E13  |\
+|0xce457def5e06b10033de8229246bddf6c7fc7bdc|1.9285714238095E13  |\
+|0x3d8f4c69b929f05823f4c7bad0377d84251a65a7|1.9172292589394E13  |\
+|0x1452e511b1a5625ad0b707bab5786a53db41d808|1.7140726323809E13  |\
++------------------------------------------+--------------------+\
+\
+Expensive transactions (gas_price > 10^9): 20,382,189\
+\
+Stopping Spark session...\
+Process completed. Spark session closed.}
